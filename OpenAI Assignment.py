@@ -4,13 +4,13 @@ from requests import get, post
 from functions import h2, paragraph
 
 # WordPress Data
-wpuser = 'arifitdev@gmail.com'
+wpuser = 'wordpress username'
 wppass = 'PHP7 hETy zsow 6hpu gnDJ N7gJ'
 credientials = f'{wpuser}:{wppass}'
 token = b64encode(credientials.encode())
 wpheader = {'Authorization': f'Basic {token.decode("utf-8")}'}
 
-openai.api_key = "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"
+openai.api_key = "your openAI API key"
 
 
 def oai(prompt):
